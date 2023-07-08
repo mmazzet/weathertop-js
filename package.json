@@ -1,7 +1,7 @@
 {
-  "name": "playlist",
+  "name": "weathertop",
   "version": "0.1.0",
-  "description": "Simple Playlist Maker",
+  "description": "Weather App",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -18,7 +18,7 @@
     "uuid": "^9.0.0"
   },
   "repository": {
-    "url": "https://github.com/wit-hdip-comp-sci-2023/playlist-1"
+    "url": "https://github.com/mmazzet/weathertop-js"
   },
   "license": "MIT",
   "keywords": [

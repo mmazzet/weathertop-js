@@ -1,21 +1,21 @@
-import { playlistStore } from "../models/playlist-store.js";
+import { stationStore } from "../models/station-store.js";
 
 export const dashboardController = {
   async index(request, response) {
     const viewData = {
       title: "WeatherTop Dashboard",
-      playlists: await playlistStore.getAllPlaylists(),
+      stations: await stationStore.getAllStations(),
     };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
   },
 
-  async addPlaylist(request, response) {
-    const newPlaylist = {
+  async addStation(request, response) {
+    const newStation = {
       title: request.body.title,
     };
-    console.log(`adding playlist ${newPlaylist.title}`);
-    await playlistStore.addPlaylist(newPlaylist);
+    console.log(`adding station ${newStation.title}`);
+    await stationStore.addStation(newStation);
     response.redirect("/dashboard");
   },
 };
