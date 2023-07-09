@@ -1,8 +1,8 @@
-# Playlist Changelog
+# WeatherTop Changelog
 
 ## version 0.1.0
 
-- initial version ported from glitch-template
-- introduce playlist-store model for simple playlists
-- allow playlists to be added to this model
-- list all playlists in the model
+- initial version ported from lab playlist
+- introduce station-store model for simple stations
+- allow stations to be added to this model
+- list all stations in the model

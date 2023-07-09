@@ -1,0 +1,54 @@
+{
+  "file": "./models/readings.json",
+  "readings": [
+    {
+      "code": "200",
+      "temperature": "15",
+      "windSpeed": 122,
+      "_id": "31b2cdd9-485c-4780-adc0-f0efcaf636f6",
+      "stationid": "4115c45a-d94e-4b5d-8c28-0904f8140a4e"
+    },
+    {
+      "code": "500",
+      "temperature": "15",
+      "windSpeed": 75,
+      "_id": "d331605a-cd0d-4a3a-8a0b-b86613732c50",
+      "stationid": "4115c45a-d94e-4b5d-8c28-0904f8140a4e"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "windSpeed": 0,
+      "_id": "8d9f980b-0c51-4f52-bb33-979e9381b116",
+      "stationid": "01dc8c25-6ebe-4b08-af5b-db24e840f6d5"
+    },
+    {
+      "code": "800",
+      "temperature": "-1",
+      "windSpeed": 10000,
+      "_id": "7d28b5b2-3ec4-42aa-ab2b-48a686cd3d82",
+      "stationid": "01dc8c25-6ebe-4b08-af5b-db24e840f6d5"
+    },
+    {
+      "code": "200",
+      "temperature": "-9",
+      "windSpeed": 123,
+      "_id": "a53a75e8-da7d-4a1a-b5ba-f7f2c69942ef",
+      "stationid": "01dc8c25-6ebe-4b08-af5b-db24e840f6d5"
+    },
+    {
+      "code": "",
+      "temperature": "",
+      "windSpeed": 0,
+      "_id": "b5de85ac-9032-4b2d-8229-8ef8a4634aff",
+      "stationid": "01dc8c25-6ebe-4b08-af5b-db24e840f6d5"
+    },
+    {
+      "code": "600",
+      "temperature": "-15",
+      "windSpeed": 159,
+      "_id": "a0f44ecb-7620-459b-b2a4-64dbb8b3857f",
+      "stationid": "02141769-79e2-432e-b32f-9cd6979feb6e"
+    }
+  ]
+}
