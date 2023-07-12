@@ -1,27 +1,41 @@
-  <div class="card">
-  <div class="content">
-    <i class="right floated huge {{_icon}} {{_colour}} icon"></i>
-    <h3 class="ui header">{{_title}}</h3>
-    <div class="description">
-      <div class="ui text">{{_valueA}}</div>
-      <div class="ui text">{{_valueB}}</div>
-    </div>
-    <div class="description ui two column grid">
-      <div class="column">
-        <div class="ui text">
-          <div class="ui text">{{_valueC}}</div>
-          <div class="ui text">{{_valueD}}</div>
-        </div>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box has-background-dark">
+
+      <h2 class="subtitle has-text-white">{{station.name}}</h2>
+
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box  has-background-dark">
+      <h2 class="subtitle has-text-white">Weather</h2>
+      <div class="content">
+        <p class="subtitle has-text-white"></p>
       </div>
-      <div class="column">
-        {{#if _trend}}
-          {{#if_eq _trend 1}}
-            <i class="right floated big arrow up {{_colour}} icon"></i>
-          {{else}}
-            <i class="right floated big arrow down {{_colour}} icon"></i>
-          {{/if_eq}}
-        {{/if}}
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box  has-background-dark">
+      <h2 class="subtitle has-text-white">Temp</h2>
+      <div class="content">
+        <p class="subtitle has-text-white"></p>
       </div>
-    </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box  has-background-dark">
+      <h2 class="subtitle has-text-white">Wind</h2>
+      <div class="content">
+        <p class="subtitle has-text-white"></p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box  has-background-dark">
+      <h2 class="subtitle has-text-white">Pressure</h2>
+      <div class="content">
+        <p class="subtitle has-text-white"></p>
+      </div>
+    </article>
   </div>
 </div>

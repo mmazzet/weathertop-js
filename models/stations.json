@@ -2,24 +2,24 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "Station 1",
-      "_id": "067f1000-10d8-4adc-a938-943216fd0ceb"
+      "name": "Tramore",
+      "_id": "01"
     },
     {
-      "title": "Station 2",
-      "_id": "4115c45a-d94e-4b5d-8c28-0904f8140a4e"
+      "name": "Dunmore",
+      "_id": "05"
     },
     {
-      "title": "Station 3",
-      "_id": "b73d3d43-195d-4768-b501-0fae548274ba"
+      "name": "Galway",
+      "_id": "f0f20c54-a415-4f7f-8803-43fead443cd2"
     },
     {
-      "title": "Station 4",
-      "_id": "01dc8c25-6ebe-4b08-af5b-db24e840f6d5"
+      "name": "Paris",
+      "_id": "76d2086a-2309-438c-a63b-6829dc328a4a"
     },
     {
-      "title": "Station 5",
-      "_id": "02141769-79e2-432e-b32f-9cd6979feb6e"
+      "name": "Barna",
+      "_id": "ba7c3254-4a45-4e22-95de-d3c018a626cf"
     }
   ]
 }

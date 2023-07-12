@@ -12,9 +12,9 @@ export const dashboardController = {
 
   async addStation(request, response) {
     const newStation = {
-      title: request.body.title,
+      name: request.body.name,
     };
-    console.log(`adding station ${newStation.title}`);
+    console.log(`adding station ${newStation.name}`);
     await stationStore.addStation(newStation);
     response.redirect("/dashboard");
   },

@@ -1,17 +1,45 @@
 <form class="box" action="/station/{{station._id}}/addreading" method="POST">
-  <label>Enter Reading Details:</label>
-  <div class="field is-horizontal">
-    <div class="field-body">
-      <div class="field">
-        <input class="input" type="text" placeholder="Enter Code" name="code">
+  <div class="columns">
+    <div class="field column">
+      <label class="label">Code</label>
+      <div class="select is-fullwidth">
+        <select name="code">
+          <option>Select Code</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+          <option value="400">400</option>
+          <option value="500">500</option>
+          <option value="600">600</option>
+          <option value="700">700</option>
+          <option value="800">800</option>
+        </select>
       </div>
-      <div class="field">
-        <input class="input" type="text" placeholder="Enter Temperature" name="temperature">
+    </div>
+    <div class="field column">
+      <label class="label">Temperature</label>
+      <div class="control">
+        <input class="input" placeholder="00.0C" type="number" min="-89.2" max="56.7" step="any" name="temperature"
+          required>
       </div>
-      <div class="field">
-        <input class="input" type="text" placeholder="Enter Windspeed" name="windSpeed">
+    </div>
+    <div class="field column">
+      <label class="label">Wind Speed</label>
+      <div class="control">
+        <input class="input" placeholder="00.00kMh" type="number" min="0" max="117.9" name="windSpeed" required>
+      </div>
+    </div>
+    <div class="field column">
+      <label class="label">Pressure</label>
+      <div class="control">
+        <input class="input" placeholder="000hPa" type="number" name="pressure" min="946.5" max="1084.8" step="any"
+          required>
       </div>
     </div>
   </div>
-  <button class="button is-primary">Add Reading</button>
+  <div class="field mt-4">
+    <div class="control">
+      <button class="button is-info">Add Reading</button>
+    </div>
+  </div>
 </form>

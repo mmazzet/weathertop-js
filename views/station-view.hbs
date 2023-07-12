@@ -2,8 +2,13 @@
 
 <section class="section">
   <div class="title">
-    {{station.title}}
+    {{station.name}}
   </div>
-    {{> list-readings}}
-    {{> add-reading}}
+
+  <div class="title">
+    {{> card}}
+  </div>
+
+  {{> list-readings}}
+  {{> add-reading}}
 </section>

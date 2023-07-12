@@ -41,9 +41,10 @@ export const readingStore = {
   },
 
   async updateReading(reading, updatedReading) {
-    track.code = updatedReading.code;
-    track.temperature = updatedReading.temperature;
-    track.windSpeed = updatedReading.windSpeed;
+    reading.code = updatedReading.code;
+    reading.temperature = updatedReading.temperature;
+    reading.windSpeed = updatedReading.windSpeed;
+    reading.pressure = updatedReading.pressure;
     await db.write();
   },
 };
