@@ -1,9 +1,12 @@
 import { stationStore } from "../models/station-store.js";
 import { readingStore } from "../models/reading-store.js";
+import { Analytics } from "../utils/Analytics.js";
+
 
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    Analytics.updateWeather(station);
     const viewData = {
       name: "Station",
       station: station,
@@ -22,6 +25,7 @@ export const stationController = {
     };
     console.log(`adding reading ${newReading.code}`);
     await readingStore.addReading(station._id, newReading);
+    Analytics.updateWeather(station);
     response.redirect("/station/" + station._id);
   },
 };
