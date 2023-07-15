@@ -3,7 +3,7 @@ import { stationStore } from "../models/station-store.js";
 export const dashboardController = {
   async index(request, response) {
     const viewData = {
-      title: "WeatherTop Dashboard",
+      name: "WeatherTop Dashboard",
       stations: await stationStore.getAllStations(),
     };
     console.log("dashboard rendering");

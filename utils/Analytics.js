@@ -1,6 +1,5 @@
 "use strict";
 
-
 import { Conversion } from "./Conversions.js";
 export const Analytics = {
 

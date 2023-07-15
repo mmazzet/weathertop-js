@@ -8,7 +8,7 @@ export const stationController = {
     const station = await stationStore.getStationById(request.params.id);
     Analytics.updateWeather(station);
     const viewData = {
-      name: "Station",
+      name: station.name,
       station: station,
     };
     response.render("station-view", viewData);
