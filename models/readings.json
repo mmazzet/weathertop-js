@@ -7,7 +7,8 @@
       "windSpeed": 3.5,
       "pressure": 1002,
       "_id": "02",
-      "stationid": "01"
+      "stationid": "01",
+      "windDirection": 90
     },
     {
       "code": 600,
@@ -15,15 +16,8 @@
       "windSpeed": 2,
       "pressure": 1004,
       "_id": "03",
-      "stationid": "01"
-    },
-    {
-      "code": 700,
-      "temperature": 8,
-      "windSpeed": 1,
-      "pressure": 1005,
-      "_id": "04",
-      "stationid": "01"
+      "stationid": "01",
+      "windDirection": 96
     },
     {
       "code": 700,
@@ -31,7 +25,8 @@
       "windSpeed": 1,
       "pressure": 999,
       "_id": "06",
-      "stationid": "05"
+      "stationid": "05",
+      "windDirection": 98
     },
     {
       "code": 200,
@@ -39,25 +34,26 @@
       "windSpeed": 3.5,
       "pressure": 1000,
       "_id": "07",
-      "stationid": "05"
+      "stationid": "05",
+      "windDirection": 102
     },
     {
-      "date": "2023-07-15 15:00:02.787",
-      "code": 400,
-      "temperature": -1,
-      "windSpeed": 75,
-      "pressure": 1009,
-      "_id": "4ac09b3e-18f0-42e5-a958-baf071bc7dc1",
+      "date": "2023-07-15 17:07:06.746",
+      "code": 500,
+      "temperature": 22,
+      "windSpeed": 11,
+      "pressure": 1001,
+      "_id": "be460471-09b0-4862-9b0f-7924d070782d",
       "stationid": "f0f20c54-a415-4f7f-8803-43fead443cd2"
     },
     {
-      "date": "2023-07-15 16:38:00.282",
+      "date": "2023-07-15 17:08:41.852",
       "code": 400,
-      "temperature": -15,
-      "windSpeed": 75,
-      "pressure": 1009,
-      "_id": "3dfe0bd0-e5a8-4682-a7b3-1df05ce0e1de",
-      "stationid": "05"
+      "temperature": 27,
+      "windSpeed": 1,
+      "pressure": 999,
+      "_id": "13d89c0c-229e-4e99-a0f1-b2582c4717bf",
+      "stationid": "f0f20c54-a415-4f7f-8803-43fead443cd2"
     }
   ]
 }

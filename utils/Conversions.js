@@ -5,9 +5,9 @@ import { readingStore } from "../models/reading-store.js";
 export const Conversion = {
   weatherCodes: {
     100: "Clear",
-    200: "Partial Clouds",
+    200: "Partial\nClouds",
     300: "Cloudy",
-    400: "Light Showers",
+    400: "Light\nShowers",
     500: "Heavy Showers",
     600: "Rain",
     700: "Snow",
