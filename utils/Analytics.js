@@ -13,6 +13,7 @@ export const Analytics = {
       station.tempF = Conversion.tempF(station.tempC);
       station.windBft = Conversion.beaufort(lastReading.windSpeed);
       station.pressure = lastReading.pressure;
+      station.windCompass = Conversion.degreesToCompass(lastReading.windDirection);
     }
   }
 };

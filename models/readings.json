@@ -49,6 +49,15 @@
       "pressure": 1009,
       "_id": "4ac09b3e-18f0-42e5-a958-baf071bc7dc1",
       "stationid": "f0f20c54-a415-4f7f-8803-43fead443cd2"
+    },
+    {
+      "date": "2023-07-15 16:38:00.282",
+      "code": 400,
+      "temperature": -15,
+      "windSpeed": 75,
+      "pressure": 1009,
+      "_id": "3dfe0bd0-e5a8-4682-a7b3-1df05ce0e1de",
+      "stationid": "05"
     }
   ]
 }
