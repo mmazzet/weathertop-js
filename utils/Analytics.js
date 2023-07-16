@@ -15,10 +15,85 @@ export const Analytics = {
       station.windCompass = Conversion.degreesToCompass(lastReading.windDirection);
       let str = Number(Analytics.windChill(lastReading.temperature, lastReading.windSpeed).toFixed(2));
       station.windChill = str;
+      station.maxTemp = this.maxTemp(station.readings);
+      station.minTemp = this.minTemp(station.readings);
+      station.maxWind = this.maxWind(station.readings);
+      station.minWind = this.minWind(station.readings);
+      station.maxPressure = this.maxPressure(station.readings);
+      station.minPressure = this.minPressure(station.readings);
     }
   },
+  
   windChill: function(temp, windSpeed) {
     return 13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16);
+  },
+
+  max: function (values) {
+    let max = values[0];
+    for (let i = 0; i < values.length; i++) {
+      if (values[i] > max) {
+        max = values[i];
+      }
+    }
+    return max;
+  },
+  
+  min: function (values) {
+    let min = values[0];
+    for (let i = 0; i < values.length; i++) {
+      if (values[i] < min) {
+        min = values[i];
+      }
+    }
+    return min;
+  },
+  
+  maxTemp: function (readings) {
+    const values = [];
+    for (let i = 0; i < readings.length; i++) {
+      values[i] = readings[i].temperature;
+    }
+    return this.max(values);
+  },
+  
+  minTemp: function (readings) {
+    const values = [];
+    for (let i = 0; i < readings.length; i++) {
+      values[i] = readings[i].temperature;
+    }
+    return this.min(values);
+  },
+  
+  maxWind: function (readings) {
+    const values = [];
+    for (let i = 0; i < readings.length; i++) {
+      values[i] = readings[i].windSpeed;
+    }
+    return this.max(values);
+  },
+  
+  minWind: function (readings) {
+    const values = [];
+    for (let i = 0; i < readings.length; i++) {
+      values[i] = readings[i].windSpeed;
+    }
+    return this.min(values);
+  },
+  
+  maxPressure: function (readings) {
+    const values = [];
+    for (let i = 0; i < readings.length; i++) {
+      values[i] = readings[i].pressure;
+    }
+    return this.max(values);
+  },
+  
+  minPressure: function (readings) {
+    const values = [];
+    for (let i = 0; i < readings.length; i++) {
+      values[i] = readings[i].pressure;
+    }
+    return this.min(values);
   }
 };
 
