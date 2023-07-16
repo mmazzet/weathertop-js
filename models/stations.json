@@ -20,6 +20,16 @@
     {
       "name": "Paris",
       "_id": "bece1416-4f94-45c6-a0e1-6ccbe128594b"
+    },
+    {
+      "name": "Spiddal",
+      "lat": "12.6527",
+      "lng": "43.5457",
+      "_id": "421e234e-14fe-46d6-a305-946a88ddfcdd"
+    },
+    {
+      "name": "Cagliari",
+      "_id": "a1a1426e-869e-4d03-831c-5ef6bda76c71"
     }
   ]
 }

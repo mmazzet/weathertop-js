@@ -2,6 +2,9 @@
   <div class="tile is-parent">
     <article class="tile is-child box has-background-dark">
       <h2 class="subtitle has-text-white">{{station.name}}</h2>
+       <div class="content">
+        <p class="subtitle has-text-white is-size-6">Lat: {{station.lat}} <br> Lng: {{station.lng}} </p>
+      </div>
     </article>
   </div>
   <div class="tile is-parent">
@@ -9,6 +12,10 @@
       <h2 class="subtitle has-text-white">Weather</h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.weather}}</p>
+        <i class="is-pulled-right is-size-1  has-text-danger {{station.weatherIcon}} icon ">
+  
+        </i>
+ 
       </div>
     </article>
   </div>

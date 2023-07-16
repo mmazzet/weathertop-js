@@ -13,6 +13,8 @@ export const dashboardController = {
   async addStation(request, response) {
     const newStation = {
       name: request.body.name,
+      lat: request.body.lat,
+      lng: request.body.lng,
     };
     console.log(`adding station ${newStation.name}`);
     await stationStore.addStation(newStation);
