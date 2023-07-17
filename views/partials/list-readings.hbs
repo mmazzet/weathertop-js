@@ -7,6 +7,7 @@
       <th>Wind Speed</th>
       <th>Wind Direction</th>
       <th>Pressure</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -29,6 +30,11 @@
       </td>
        <td>
         {{pressure}}
+      </td>
+       <td>
+          <a href="/station/{{../station._id}}/deletereading/{{_id}}" class="button is-danger">
+            <i class="fa-regular fa-trash-can text-is-danger"></i>
+          </a>
       </td>
     </tr>
     {{/each}}

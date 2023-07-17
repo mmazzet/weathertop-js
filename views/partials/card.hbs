@@ -1,26 +1,41 @@
 <div class="tile is-ancestor">
   <div class="tile is-parent">
     <article class="tile is-child box has-background-dark">
-      <h2 class="subtitle has-text-white has-text-weight-semibold">{{station.name}}</h2>
+      <h2 class="subtitle has-text-white has-text-weight-semibold">
+        {{station.name}}
+        <span class="icon is-pulled-right">
+          <i class="fa-solid fa-location-pin has-text-link is-size-1"></i>
+        </span>
+      </h2>
       <div class="content">
-        <p class="subtitle has-text-white is-size-6">Lat: {{station.lat}} <br> Lng: {{station.lng}} </p>
+        <p class="subtitle has-text-white is-size-6">
+          Lat: {{station.lat}} <br>
+          Lng: {{station.lng}}
+        </p>
       </div>
     </article>
   </div>
+
   <div class="tile is-parent">
     <article class="tile is-child box  has-background-dark">
-      <h2 class="subtitle has-text-white has-text-weight-semibold">Weather</h2>
+      <h2 class="subtitle has-text-white has-text-weight-semibold">Weather
+        <span class="icon is-pulled-right">
+          <i class="has-text-link is-size-1">{{station.weatherIcon}}</i>
+        </span>
+      </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.weather}}</p>
-        <i class="is-pulled-right is-size-1  has-text-danger icon ">
-          {{station.weatherIcon}}
-        </i>
       </div>
     </article>
   </div>
+
   <div class="tile is-parent">
     <article class="tile is-child box  has-background-dark">
-      <h2 class="subtitle has-text-white has-text-weight-semibold">Temp</h2>
+      <h2 class="subtitle has-text-white has-text-weight-semibold">Temp
+        <span class="icon is-pulled-right">
+          <i class="fa-solid fa-temperature-low has-text-info is-size-1"></i>
+        </span>
+      </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.tempC}} C <br> {{station.tempF}} F</p>
         <p class="subtitle has-text-white is-size-6">Max: {{station.maxTemp}} C <br> Min: {{station.minTemp}} C</p>
@@ -29,20 +44,31 @@
   </div>
   <div class="tile is-parent">
     <article class="tile is-child box  has-background-dark">
-      <h2 class="subtitle has-text-white has-text-weight-semibold">Wind</h2>
+      <h2 class="subtitle has-text-white has-text-weight-semibold">Wind
+        <span class="icon is-pulled-right">
+          <i class="fa-solid fa-wind has-text-success is-size-1"></i>
+        </span>
+
+      </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.windBft}} bft <br>{{station.windCompass}} <br> Feels like
           {{station.windChill}} C</p>
-          <p class="subtitle has-text-white is-size-6">Max: {{station.maxWind}} KMh <br> Min: {{station.minWind}} KMh</p>
+        <p class="subtitle has-text-white is-size-6">Max: {{station.maxWind}} KMh <br> Min: {{station.minWind}} KMh</p>
       </div>
     </article>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child box  has-background-dark">
-      <h2 class="subtitle has-text-white has-text-weight-semibold">Pressure</h2>
+      <h2 class="subtitle has-text-white has-text-weight-semibold">Pressure
+        <span class="icon is-pulled-right">
+          <i class="fa-solid fa-gauge has-text-link is-size-1"></i>
+        </span>
+
+      </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.pressure}} hpa</p>
-        <p class="subtitle has-text-white is-size-6">Max: {{station.maxPressure}} hpa <br> Min: {{station.minPressure}} hpa</p>
+        <p class="subtitle has-text-white is-size-6">Max: {{station.maxPressure}} hpa <br> Min: {{station.minPressure}}
+          hpa</p>
       </div>
     </article>
   </div>

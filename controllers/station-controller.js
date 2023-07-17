@@ -29,5 +29,27 @@ export const stationController = {
     Analytics.updateWeather(station);
     response.redirect("/station/" + station._id);
   },
+
+
+  async deleteReading(request, response) {
+    const stationId = request.params.stationid;
+    const readingId = request.params.readingid;
+    console.log(`Deleting Reading ${readingId} from Station ${stationId}`);
+    await readingStore.deleteReading(stationId, readingId);
+    const station = await stationStore.getStationById(stationId);
+    Analytics.updateWeather(station);
+    response.redirect("/station/" + stationId);
+  }
+
+  // async deleteReading(request, response) {
+  //   const stationId = request.params.stationId;
+  //   const readingId = request.params.readingId;
+
+  //   console.log("Station ID:", stationId);
+  //   console.log("Reading ID:", readingId);
+  //   console.log(`Deleting Reading ${readingId} from Station ${stationId}`);
+  //   await readingStore.deleteReading(request.params.readingId);
+  //   response.redirect("/station/" + stationId);
+  // },
 };
 

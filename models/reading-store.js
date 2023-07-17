@@ -28,9 +28,9 @@ export const readingStore = {
     return db.data.readings.find((reading) => reading._id === id);
   },
 
-  async deleteReading(id) {
+  async deleteReading(stationId, readingId) {
     await db.read();
-    const index = db.data.readings.findIndex((reading) => reading._id === id);
+    const index = db.data.readings.findIndex((reading) => reading._id === readingId  && reading.stationid === stationId);
     db.data.readings.splice(index, 1);
     await db.write();
   },

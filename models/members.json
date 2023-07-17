@@ -1,0 +1,19 @@
+{
+  "file": "./models/members.json",
+  "members": [
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "_id": "846ca9cc-0ddc-43c4-a93a-a486222be2d8"
+    },
+    {
+      "firstName": "Lisa ",
+      "lastName": "Simpson",
+      "email": "lisa@simpson.com",
+      "password": "secret",
+      "_id": "7b75fc38-ed26-4e2e-a453-297aac3a6adc"
+    }
+  ]
+}

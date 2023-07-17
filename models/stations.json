@@ -18,18 +18,33 @@
       "_id": "b701281f-74ba-46fa-9e1c-ac4c2dd3d393"
     },
     {
-      "name": "Paris",
-      "_id": "bece1416-4f94-45c6-a0e1-6ccbe128594b"
+      "name": "Galway for HOMER",
+      "_id": "62914ed6-a6ff-4b97-812f-ae1072bc2a52"
     },
     {
-      "name": "Spiddal",
-      "lat": "12.6527",
-      "lng": "43.5457",
-      "_id": "421e234e-14fe-46d6-a305-946a88ddfcdd"
+      "name": "Dunmore",
+      "userid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
+      "_id": "7cc86031-70b6-4395-bdcd-73eb50156b77"
+    },
+    {
+      "name": "Barna",
+      "memberid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
+      "_id": "55cbdf8b-9a21-49a0-89ba-c3407cee6dac"
     },
     {
       "name": "Cagliari",
-      "_id": "a1a1426e-869e-4d03-831c-5ef6bda76c71"
+      "memberid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
+      "_id": "49a10eff-59a2-4227-a29c-9191d375060f"
+    },
+    {
+      "name": "HOMER STATION",
+      "memberid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
+      "_id": "1e97b815-5115-4383-910e-032ce88f5da2"
+    },
+    {
+      "name": "LISA STATION",
+      "memberid": "7b75fc38-ed26-4e2e-a453-297aac3a6adc",
+      "_id": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
     }
   ]
 }
