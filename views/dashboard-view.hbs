@@ -1,6 +1,9 @@
 {{> menu active="dashboard"}}
 
 <section class="section">
+  <div class="notification is-primary has-text-white">
+  Welcome {{loggedInMember.firstName}} {{loggedInMember.lastName}}!
+</div>
   {{> list-stations}}
   {{> add-station}}
 </section>

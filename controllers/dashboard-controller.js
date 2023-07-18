@@ -4,9 +4,11 @@ import { accountsController } from "./accounts-controller.js";
 export const dashboardController = {
   async index(request, response) {
     const loggedInMember = await accountsController.getLoggedInMember(request);
+    console.log(loggedInMember);
     const viewData = {
       name: "WeatherTop Dashboard",
       stations: await stationStore.getStationsByMemberId(loggedInMember._id),
+      loggedInMember: loggedInMember,
     };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);

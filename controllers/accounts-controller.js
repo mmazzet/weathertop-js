@@ -34,14 +34,37 @@ export const accountsController = {
     response.redirect("/");
   },
 
+  // async authenticate(request, response) {
+  //   const member = await memberStore.getMemberByEmail(request.body.email);
+  //   let message = "";
+  //   if (member !=null && member.password === request.body.password) {
+  //     response.cookie("station", member.email);
+  //     console.log(`logging in ${member.email}`);
+  //     response.redirect("/dashboard");
+  //   } else {
+  //     message = "Incorrect email or password";
+  //     console.log(`Authentication failed for ${member.email}`);
+  //     response.render("login-view", { message });
+  //   }
+  // },
+
   async authenticate(request, response) {
     const member = await memberStore.getMemberByEmail(request.body.email);
-    if (member) {
+    let message = "";
+  
+    if (member && member.password === request.body.password) {
       response.cookie("station", member.email);
       console.log(`logging in ${member.email}`);
       response.redirect("/dashboard");
     } else {
-      response.redirect("/login");
+      if (!member) {
+        message = "Email not found. Please check your email or Sign up for a new account.";
+      } else {
+        message = "Incorrect email or password. Please check again or Sign up for a new account.";
+      }
+  
+      console.log(`Authentication failed for ${request.body.email}`);
+      response.render("login-view", { message });
     }
   },
 

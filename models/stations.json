@@ -32,11 +32,6 @@
       "_id": "55cbdf8b-9a21-49a0-89ba-c3407cee6dac"
     },
     {
-      "name": "Cagliari",
-      "memberid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
-      "_id": "49a10eff-59a2-4227-a29c-9191d375060f"
-    },
-    {
       "name": "HOMER STATION",
       "memberid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
       "_id": "1e97b815-5115-4383-910e-032ce88f5da2"
@@ -45,6 +40,11 @@
       "name": "LISA STATION",
       "memberid": "7b75fc38-ed26-4e2e-a453-297aac3a6adc",
       "_id": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
+    },
+    {
+      "name": "Galway",
+      "memberid": "7b75fc38-ed26-4e2e-a453-297aac3a6adc",
+      "_id": "1fb118a2-28f6-47ee-8f8e-6a2a0dc02b96"
     }
   ]
 }

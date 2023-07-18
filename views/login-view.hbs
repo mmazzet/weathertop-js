@@ -1,16 +1,30 @@
 {{> welcome-menu active="login"}}
 
-<section class="section">
-  <h1 class="title">Log in</h1>
-  <form action="/authenticate" method="POST">
-    <div class="field">
-      <label class="label">Email</label> <input class="input" type="text" placeholder="Enter email" name="email">
+<section class="content box mt-5">
+  {{#if message}}
+  <div class="notification is-danger">
+    {{message}}
+  </div>
+  {{/if}}
+  <div class="columns">
+    <div class="column is-half">
+      <form action="/authenticate" method="POST">
+        <h3 class="subtitle">Login</h3>
+        <div class="field">
+          <label class="label">Email</label>
+          <input class="input" placeholder="Email" name="email" required>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <input class="input" type="password" placeholder="Password" name="password" required>
+        </div>
+        <button class="button button is-link">Submit</button>
+      </form>
     </div>
-    <div class="field">
-      <label class="label">Password</label> <input class="input" type="password" placeholder="Enter Password" name="password">
+    <div class="column is-half">
+      <figure class="image is-square">
+        <img src="../images/login.jpg">
+      </figure>
     </div>
-    <div class="field is-grouped">
-      <button class="button is-link">Submit</button>
-    </div>
-  </form>
+  </div>
 </section>

@@ -199,16 +199,6 @@
       "stationid": "62914ed6-a6ff-4b97-812f-ae1072bc2a52"
     },
     {
-      "date": "2023-07-17 21:23:06.365",
-      "code": 200,
-      "temperature": 2,
-      "windSpeed": 2,
-      "windDirection": 2,
-      "pressure": 992,
-      "_id": "d0d113b4-9380-4d58-9c9a-c056275da06f",
-      "stationid": "49a10eff-59a2-4227-a29c-9191d375060f"
-    },
-    {
       "date": "2023-07-17 21:23:26.943",
       "code": 300,
       "temperature": 3,
@@ -229,24 +219,44 @@
       "stationid": "1e97b815-5115-4383-910e-032ce88f5da2"
     },
     {
-      "date": "2023-07-17 21:25:15.486",
+      "date": "2023-07-18 19:24:31.767",
+      "code": 500,
+      "temperature": 15,
+      "windSpeed": 25,
+      "windDirection": 155,
+      "pressure": 1005,
+      "_id": "bbe70a88-334b-4cdf-a592-0bd2a8f75cf2",
+      "stationid": "49a10eff-59a2-4227-a29c-9191d375060f"
+    },
+    {
+      "date": "2023-07-18 19:35:39.993",
+      "code": 100,
+      "temperature": 10,
+      "windSpeed": 10,
+      "windDirection": 10,
+      "pressure": 1000,
+      "_id": "a8094879-e247-49a5-a408-50c62a85f86b",
+      "stationid": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
+    },
+    {
+      "date": "2023-07-18 19:35:58.302",
+      "code": 200,
+      "temperature": 20,
+      "windSpeed": 20,
+      "windDirection": 20,
+      "pressure": 1002,
+      "_id": "fad68eac-991d-4539-87ad-097a0657839f",
+      "stationid": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
+    },
+    {
+      "date": "2023-07-18 20:23:20.621",
       "code": 700,
       "temperature": 7,
       "windSpeed": 7,
       "windDirection": 7,
-      "pressure": 997,
-      "_id": "be017130-b259-49c5-9403-9d8b5f35446a",
-      "stationid": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
-    },
-    {
-      "date": "2023-07-17 21:25:34.828",
-      "code": 600,
-      "temperature": 6,
-      "windSpeed": 6,
-      "windDirection": 6,
-      "pressure": 996,
-      "_id": "096e5deb-ba7e-4a3a-b436-86544a14899e",
-      "stationid": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
+      "pressure": 1007,
+      "_id": "f1b6fc75-0692-4a74-9c6e-367954580ad1",
+      "stationid": "1fb118a2-28f6-47ee-8f8e-6a2a0dc02b96"
     }
   ]
 }
