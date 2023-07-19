@@ -13,3 +13,8 @@
 - Wind Direction, Wind Chill, Wind Compass added to card
 - Dashboard shows station list, button to open station view
 - Includes forms to add new station and new reading
+
+- release 2
+- Latitude, Longitude, Max/Min values
+- Members, login, sign up, account creation
+- Members can create weather stations

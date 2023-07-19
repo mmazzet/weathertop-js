@@ -28,12 +28,15 @@ export const Conversion = {
   weatherIcon: function(code) {
     return this.weatherCodeIcons[code];
   },
+
   currentWeather: function(code) {
     return this.weatherCodes[code];
   },
+
   tempF: function(tempC) {
     return tempC * 1.8 + 32;
   },
+
   beaufort: function(windspeed) {
     if (windspeed === 0) {
       return 0;
@@ -64,6 +67,7 @@ export const Conversion = {
     }
     return -1;
   },
+  
   degreesToCompass: function(deg) {
     if (deg > 11.25 && deg <= 33.75) {
       return "North North East";

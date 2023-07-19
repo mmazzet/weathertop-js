@@ -8,6 +8,7 @@ export const Analytics = {
       let lastReading = station.readings[station.readings.length - 1];
       station.code = lastReading.code;
       station.weather = Conversion.currentWeather(lastReading.code);
+      station.weatherIcon = Conversion.weatherIcon(lastReading.code);
       station.tempC = lastReading.temperature;
       station.tempF = Conversion.tempF(station.tempC);
       station.windBft = Conversion.beaufort(lastReading.windSpeed);
