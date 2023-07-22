@@ -57,6 +57,8 @@ export const accountsController = {
 
   async getLoggedInMember(request) {
     const memberEmail = request.cookies.station;
-    return await memberStore.getMemberByEmail(memberEmail);
+    const member = await memberStore.getMemberByEmail(memberEmail);
+    console.log("Logged-in member:", memberEmail);
+    return member;
   },
 };

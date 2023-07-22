@@ -40,16 +40,5 @@ export const stationController = {
     Analytics.updateWeather(station);
     response.redirect("/station/" + stationId);
   }
-
-  // async deleteReading(request, response) {
-  //   const stationId = request.params.stationId;
-  //   const readingId = request.params.readingId;
-
-  //   console.log("Station ID:", stationId);
-  //   console.log("Reading ID:", readingId);
-  //   console.log(`Deleting Reading ${readingId} from Station ${stationId}`);
-  //   await readingStore.deleteReading(request.params.readingId);
-  //   response.redirect("/station/" + stationId);
-  // },
 };
 

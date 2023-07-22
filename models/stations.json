@@ -3,43 +3,45 @@
   "stations": [
     {
       "name": "Tramore",
+      "lat": "01",
+      "lng": "03",
+      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
       "_id": "01"
     },
     {
       "name": "Dunmore",
+      "lat": "11",
+      "lng": "04",
+      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
       "_id": "05"
     },
     {
-      "name": "Galway",
-      "_id": "f0f20c54-a415-4f7f-8803-43fead443cd2"
-    },
-    {
-      "name": "Barna",
-      "_id": "b701281f-74ba-46fa-9e1c-ac4c2dd3d393"
-    },
-    {
-      "name": "Galway for HOMER",
-      "_id": "62914ed6-a6ff-4b97-812f-ae1072bc2a52"
+      "name": "Tramore",
+      "lat": "01",
+      "lng": "03",
+      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
+      "_id": "01"
     },
     {
       "name": "Dunmore",
-      "userid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
-      "_id": "7cc86031-70b6-4395-bdcd-73eb50156b77"
+      "lat": "11",
+      "lng": "04",
+      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
+      "_id": "05"
     },
     {
-      "name": "LISA STATION",
-      "memberid": "7b75fc38-ed26-4e2e-a453-297aac3a6adc",
-      "_id": "20d10d4f-89ae-4097-a5f4-a1bbc2fdb2c2"
+      "name": "Galway Homer",
+      "lat": "12.6527",
+      "lng": "43.5457",
+      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
+      "_id": "3509c796-badd-405d-9116-8cb7d0589236"
     },
     {
-      "name": "Galway",
-      "memberid": "7b75fc38-ed26-4e2e-a453-297aac3a6adc",
-      "_id": "1fb118a2-28f6-47ee-8f8e-6a2a0dc02b96"
-    },
-    {
-      "name": "Dunmore",
-      "memberid": "846ca9cc-0ddc-43c4-a93a-a486222be2d8",
-      "_id": "33f397d8-135c-4b71-b957-723adc2b5cda"
+      "name": "Paris",
+      "lat": "100",
+      "lng": "120",
+      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
+      "_id": "762b3d89-623f-432d-bf29-d8b0b28b27ce"
     }
   ]
 }
