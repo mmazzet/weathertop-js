@@ -63,6 +63,13 @@
       "lng": "25",
       "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
       "_id": "9494e482-b43f-46fd-89b4-635803c87075"
+    },
+    {
+      "name": "Paris",
+      "lat": "11",
+      "lng": "25",
+      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
+      "_id": "ffc05fb4-9fbb-4d24-80a2-0291414ec67a"
     }
   ]
 }

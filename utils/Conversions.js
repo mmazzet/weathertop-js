@@ -34,7 +34,7 @@ export const Conversion = {
   },
 
   tempF: function(tempC) {
-    return tempC * 1.8 + 32;
+    return (tempC * 1.8 + 32).toFixed(2);
   },
 
   beaufort: function(windspeed) {
