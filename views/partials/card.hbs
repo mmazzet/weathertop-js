@@ -38,7 +38,20 @@
       </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.tempC}} C <br> {{station.tempF}} F</p>
-        <p class="subtitle has-text-white is-size-6">Max: {{station.maxTemp}} C <br> Min: {{station.minTemp}} C</p>
+      </div>
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <p class="subtitle has-text-white is-size-6">Max: {{station.maxTemp}} C <br> Min: {{station.minTemp}} C</p>
+        </div>
+        <div class="column">
+          <div class="content icon is-pulled-right has-text-info">
+            {{#if station.tempTrend}}
+            <i class="fa-solid fa-up-long"></i>
+            {{else}}
+            <i class="fa-solid fa-down-long"></i>
+            {{/if}}
+          </div>
+        </div>
       </div>
     </article>
   </div>
@@ -46,14 +59,27 @@
     <article class="tile is-child box  has-background-dark">
       <h2 class="subtitle has-text-white has-text-weight-semibold">Wind
         <span class="icon is-pulled-right">
-          <i class="fa-solid fa-wind has-text-success is-size-1   mr-4 mt-4"></i>
+          <i class="fa-solid fa-wind has-text-success is-size-1 mr-4 mt-4"></i>
         </span>
-
       </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.windBft}} bft <br>{{station.windCompass}} <br> Feels like
           {{station.windChill}} C</p>
-        <p class="subtitle has-text-white is-size-6">Max: {{station.maxWind}} KMh <br> Min: {{station.minWind}} KMh</p>
+      </div>
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <p class="subtitle has-text-white is-size-6">Max: {{station.maxWind}} KMh <br> Min: {{station.minWind}} KMh
+          </p>
+        </div>
+        <div class="column">
+          <div class="content icon is-pulled-right has-text-success">
+            {{#if station.windTrend}}
+            <i class="fa-solid fa-up-long"></i>
+            {{else}}
+            <i class="fa-solid fa-down-long"></i>
+            {{/if}}
+          </div>
+        </div>
       </div>
     </article>
   </div>
@@ -63,12 +89,24 @@
         <span class="icon is-pulled-right">
           <i class="fa-solid fa-gauge has-text-link is-size-1   mr-4 mt-4"></i>
         </span>
-
       </h2>
       <div class="content">
         <p class="subtitle has-text-white is-size-6">{{station.pressure}} hpa</p>
-        <p class="subtitle has-text-white is-size-6">Max: {{station.maxPressure}} hpa <br> Min: {{station.minPressure}}
+      </div>
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <p class="subtitle has-text-white is-size-6">Max: {{station.maxPressure}} hpa <br> Min: {{station.minPressure}}
           hpa</p>
+        </div>
+        <div class="column">
+          <div class="content icon is-pulled-right has-text-link">
+            {{#if station.pressureTrend }}
+            <i class="fa-solid fa-up-long"></i>
+            {{else}}
+            <i class="fa-solid fa-down-long"></i>
+            {{/if}}
+          </div>
+        </div>
       </div>
     </article>
   </div>

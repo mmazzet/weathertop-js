@@ -22,11 +22,14 @@ export const Analytics = {
       station.minWind = this.minWind(station.readings);
       station.maxPressure = this.maxPressure(station.readings);
       station.minPressure = this.minPressure(station.readings);
+      station.tempTrend = this.tempTrend(station.readings);
+      station.windTrend = this.windTrend(station.readings);
+      station.pressureTrend = this.pressureTrend(station.readings);
     }
   },
   
   windChill: function(temp, windSpeed) {
-    return 13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16);
+    return 13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16).toFixed(2);
   },
 
   max: function (values) {
@@ -95,6 +98,55 @@ export const Analytics = {
       values[i] = readings[i].pressure;
     }
     return this.min(values);
+  },
+
+  tempTrend: function (readings) {
+    let trend = 0;
+    if (readings.length > 2) {
+      const values = [
+        readings[readings.length - 3].temperature,
+        readings[readings.length - 2].temperature,
+        readings[readings.length - 1].temperature,
+      ];
+      trend = this.calcTrend(values);
+    }
+    return trend === 1;;
+  },
+
+  windTrend: function (readings) {
+    let trend = 0;
+    if (readings.length > 2) {
+      const values = [
+        readings[readings.length - 3].windSpeed,
+        readings[readings.length - 2].windSpeed,
+        readings[readings.length - 1].windSpeed,
+      ];
+      trend = this.calcTrend(values);
+    }
+    return trend === 1;
+  },
+
+  pressureTrend: function (readings) {
+    let trend = 0;
+    if (readings.length > 2) {
+      const values = [
+        readings[readings.length - 3].pressure,
+        readings[readings.length - 2].pressure,
+        readings[readings.length - 1].pressure,
+      ];
+      trend = this.calcTrend(values);
+    }
+    return trend === 1;
+  },
+
+  calcTrend: function (values) {
+    let trend = 0;
+    if (values[0] < values[1] && values[1] < values[2]) {
+      trend = 1;
+    } else if (values[0] > values[1] && values[1] > values[2]) {
+      trend = -1;
+    }
+    return trend;
   }
 };
 

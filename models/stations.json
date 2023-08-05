@@ -30,18 +30,39 @@
       "_id": "05"
     },
     {
-      "name": "Galway Homer",
-      "lat": "12.6527",
-      "lng": "43.5457",
-      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
-      "_id": "3509c796-badd-405d-9116-8cb7d0589236"
-    },
-    {
       "name": "Paris",
       "lat": "100",
       "lng": "120",
       "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
       "_id": "762b3d89-623f-432d-bf29-d8b0b28b27ce"
+    },
+    {
+      "name": "Spiddal",
+      "lat": "12.6527",
+      "lng": "25",
+      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
+      "_id": "a06978e0-3f2a-4e82-8846-6b7fc8f4ec86"
+    },
+    {
+      "name": "Cagliari",
+      "lat": "12.6527",
+      "lng": "43.5457",
+      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
+      "_id": "c40048d6-c0d3-4361-90a8-1e25b743484e"
+    },
+    {
+      "name": "Barna",
+      "lat": "12.6527",
+      "lng": "43.5457",
+      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
+      "_id": "e1f31c16-7b65-43ee-aa26-ea35e38c6be8"
+    },
+    {
+      "name": "Spiddal",
+      "lat": "11",
+      "lng": "25",
+      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
+      "_id": "9494e482-b43f-46fd-89b4-635803c87075"
     }
   ]
 }
