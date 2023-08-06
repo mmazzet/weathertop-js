@@ -77,6 +77,13 @@
       "lng": "43.5457",
       "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
       "_id": "a8548763-1697-42f5-88da-806a674bebbb"
+    },
+    {
+      "name": "Spiddal",
+      "lat": "11",
+      "lng": "25",
+      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
+      "_id": "e7bf8a58-430c-436d-8213-282760bf1188"
     }
   ]
 }

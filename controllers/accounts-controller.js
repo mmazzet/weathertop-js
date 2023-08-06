@@ -22,7 +22,7 @@ export const accountsController = {
 
   signup(request, response) {
     const viewData = {
-      title: "Login to the Service",
+      title: "Sign up to the Service",
     };
     response.render("signup-view", viewData);
   },

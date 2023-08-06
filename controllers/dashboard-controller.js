@@ -5,7 +5,7 @@ export const dashboardController = {
   async index(request, response) {
     const loggedInMember = await accountsController.getLoggedInMember(request);
     const viewData = {
-      name: "WeatherTop Dashboard",
+      title: "WeatherTop Dashboard",
       stations: await stationStore.getStationsByMemberId(loggedInMember._id),
       loggedInMember: loggedInMember,
     };
