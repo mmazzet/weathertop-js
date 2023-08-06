@@ -2,8 +2,9 @@
 
 <section class="section">
   <div class="notification is-primary has-text-white">
-  Welcome {{loggedInMember.firstName}} {{loggedInMember.lastName}}!
-</div>
+    Welcome {{loggedInMember.firstName}} {{loggedInMember.lastName}}!
+    <a id="profile" class="button is-danger is-pulled-right mb-2" href="/update-profile-view"> Update Profile </a>
+  </div>
   {{> list-stations}}
   {{> add-station}}
 </section>

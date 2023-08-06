@@ -38,4 +38,12 @@ export const memberStore = {
     db.data.members = [];
     await db.write();
   },
+
+  async updateMember(memberId, updatedMember) {
+    const member = await this.getMemberById(memberId);
+    member.firstName = updatedMember.firstName;
+    member.lastName = updatedMember.lastName;
+    member.password = updatedMember.password;
+    await db.write();
+  }
 };
