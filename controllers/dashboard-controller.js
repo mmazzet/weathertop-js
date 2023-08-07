@@ -4,9 +4,16 @@ import { accountsController } from "./accounts-controller.js";
 export const dashboardController = {
   async index(request, response) {
     const loggedInMember = await accountsController.getLoggedInMember(request);
+    const stations = await stationStore.getStationsByMemberId(loggedInMember._id);
+
+    stations.sort((stationA, stationB) => {
+      const nameA = stationA.name.toUpperCase();
+      const nameB = stationB.name.toUpperCase();
+      return nameA.localeCompare(nameB);
+    });
     const viewData = {
       title: "WeatherTop Dashboard",
-      stations: await stationStore.getStationsByMemberId(loggedInMember._id),
+      stations: stations,
       loggedInMember: loggedInMember,
     };
     console.log("dashboard rendering");
