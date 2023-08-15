@@ -11,6 +11,11 @@
 
   {{> list-readings}}
   {{> add-reading}}
+
+  <form action="/station/{{station._id}}/addAutoReading" method="POST">
+  <button type="submit" class="button is-danger">Auto Generate Reading</button>
+</form>
+
 </section>
 
 
