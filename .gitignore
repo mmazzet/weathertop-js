@@ -50,3 +50,6 @@ jspm_packages
 .yarn-integrity
 
 package-lock.json
+
+# Ignore api keys
+.env

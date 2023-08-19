@@ -1,0 +1,37 @@
+{{!-- <section>
+  <div id = "map" style="width: 100%; height: 400px;"></div>
+  <script>
+    const map = L.map('map').setView([53.349804, -6.260310], 13);
+
+    L.tileLayer('https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}.png?key=Q04D4fnUKK7nkBHeVHMH', {
+        attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+
+    }).addTo(map);
+
+    {{#each stations}}
+    const marker = L.marker([53.349804, -6.260310]).addTo(map);
+    {{/each}}
+  </script>
+</section> --}}
+
+
+<section>
+  <div id="map" style="height: 400px;"></div>
+  <script>
+    const map = L.map('map').setView([53.349804, -6.260310], 13);
+
+    L.tileLayer('https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}.png?key=Q04D4fnUKK7nkBHeVHMH', {
+      attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    }).addTo(map);
+
+    // Retrieve the stations data from the data attribute
+    const stationsMap = document.getElementById('map');
+
+    // Loop through the stations data and add markers to the map
+for (var i = 0; i < stations.length; i++) {
+  marker = new L.marker([stations[i][1], stations[i][2]])
+    .bindPopup(stations[i][0])
+    .addTo(map);
+}
+  </script>
+</section>

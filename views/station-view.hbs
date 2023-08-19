@@ -5,17 +5,27 @@
     {{station.name}}
   </div>
 
+
+
   <div class="title">
     {{> card}}
   </div>
 
+  {{> temp-trend}}
+
   {{> list-readings}}
   {{> add-reading}}
 
-  <form action="/station/{{station._id}}/addAutoReading" method="POST">
-  <button type="submit" class="button is-danger">Auto Generate Reading</button>
-</form>
+
+
+  <form action="/station/{{station._id}}/addreport" method="POST">
+    <input type="hidden" name="lat" value="{{station.lat}}">
+    <input type="hidden" name="lng" value="{{station.lng}}">
+    <button type="submit" class="button is-danger">Auto Generate Reading</button>
+  </form>
 
 </section>
+
+
 
 

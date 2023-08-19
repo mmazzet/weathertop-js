@@ -65,13 +65,6 @@
       "_id": "1bdb1ba0-d4a0-4b66-b42a-08f0d2733856"
     },
     {
-      "name": "Galway",
-      "lat": 53.270962,
-      "lng": -9.062691,
-      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
-      "_id": "a8548763-1697-42f5-88da-806a674bebbb"
-    },
-    {
       "name": "Spiddal",
       "lat": 53.25317,
       "lng": -9.28181,
@@ -79,18 +72,39 @@
       "_id": "e7bf8a58-430c-436d-8213-282760bf1188"
     },
     {
-      "name": "Lampedusa",
-      "lat": 35.508622,
-      "lng": 12.592920,
-      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
-      "_id": "d3d71c3b-cfa7-4435-87c6-15ae84280503"
-    },
-    {
       "name": "Cagliari",
       "lat": 39.223841,
       "lng": 9.121661,
       "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
       "_id": "8dd98760-1ec9-4ecf-b2fb-2937b74585c9"
+    },
+    {
+      "name": "Galway",
+      "lat": 53.270962,
+      "lng": -9.062691,
+      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
+      "_id": "bb7d3302-68e7-4fb4-85e5-0965bebde391"
+    },
+    {
+      "name": "Galway",
+      "lat": 53.270962,
+      "lng": -9.062691,
+      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
+      "_id": "8c4b0e3f-8333-4646-9431-c1a4953bf4e3"
+    },
+    {
+      "name": "Paris",
+      "lat": 48.864716,
+      "lng": 2.349014,
+      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
+      "_id": "02d241dc-d042-4fa7-8367-a1728073c5b8"
+    },
+    {
+      "name": "Cerro Castor",
+      "lat": -54.719,
+      "lng": -68.0093,
+      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
+      "_id": "54f08085-5857-4f44-b374-499cd20f8017"
     }
   ]
 }

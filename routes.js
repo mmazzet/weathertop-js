@@ -25,6 +25,6 @@ router.post("/station/:id/addreading", stationController.addReading);
 router.get("/station/:stationid/deletereading/:readingid", stationController.deleteReading);
 router.get("/about", aboutController.index);
 
-// router.post("/station/:id/addAutoReading", stationController.addAutoReading);
+router.post("/station/:id/addreport", stationController.addReport);
 
 

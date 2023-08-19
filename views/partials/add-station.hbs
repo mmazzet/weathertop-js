@@ -6,11 +6,11 @@
         </div>
         <div class="field column">
             <label class="label">Latitude</label>
-            <input class="input" placeholder="Latitude" type="float" name="lat" required>
+            <input class="input" placeholder="Latitude" type="number" step="any" name="lat" value="{{station.lat}} " required>
         </div>
         <div class="field column">
             <label class="label">Longitude</label>
-            <input class="input" placeholder="Longitude" type="float" name="lng" required>
+            <input class="input" placeholder="Longitude" type="number" step="any" name="lng" value="{{station.lng}}" required>
         </div>
     </div>
   <button class="button is-link">Add Station</button>

@@ -4,26 +4,30 @@ import { readingStore } from "../models/reading-store.js";
 
 export const Conversion = {
   weatherCodes: {
-    100: "Clear",
-    200: "Partial\nClouds",
-    300: "Cloudy",
-    400: "Light\nShowers",
-    500: "Heavy Showers",
-    600: "Rain",
-    700: "Snow",
-    800: "Thunder",
+    200: " Thunderstorm",     
+    300: "Drizzle", 
+    500: "Rain",    
+    600: "Snow",     
+    700: "Fog",         
+    800: "Clear",         
+    801: "Few clouds",     
+    802: "Scattered-clouds",        
+    803: "Broken-clouds",         
+    804: "Overcast-clouds",       
   },
 
   weatherCodeIcons: {
-    100: "fa-solid fa-sun", 
-    200: "fa-solid fa-cloud-sun", 
-    300: "fa-solid fa-cloud", 
-    400: "fa-solid fa-cloud-sun-rain", 
-    500: "fa-solid fa-cloud-showers-heavy", 
-    600: "fa-solid fa-cloud-rain",
-    700: "fa-solid fa-snowflake", 
-    800: "fa-solid fa-cloud-bolt", 
-  },
+    200: "fa-solid fa-cloud-bolt",     
+    300: "fa-solid fa-cloud-rain", 
+    500: "fa-solid fa-cloud-showers-heavy",    
+    600: "fa-solid fa-snowflake",     
+    700: "fa-solid fa-smog",         
+    800: "fa-solid fa-sun",          
+    801: "fa-solid fa-cloud-sun",     
+    802: "fa-solid fa-cloud",         
+    803: "fa-solid fa-cloud-moon",         
+    804: "fa-solid fa-cloud",       
+},
  
   weatherIcon: function(code) {
     return this.weatherCodeIcons[code];
