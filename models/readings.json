@@ -640,6 +640,26 @@
       "pressure": 1020,
       "_id": "3ebb536e-b8ee-4c12-af08-16b40e3d021a",
       "stationid": "762b3d89-623f-432d-bf29-d8b0b28b27ce"
+    },
+    {
+      "date": "2023-08-19 22:21:03.124",
+      "code": 800,
+      "temperature": 21.24,
+      "windSpeed": 2.57,
+      "windDirection": 10,
+      "pressure": 1020,
+      "_id": "b6bd4943-7d93-4ff7-94c9-1463f2c657b9",
+      "stationid": "762b3d89-623f-432d-bf29-d8b0b28b27ce"
+    },
+    {
+      "date": "2023-08-19 22:21:59.529",
+      "code": 803,
+      "temperature": 15.45,
+      "windSpeed": 8.82,
+      "windDirection": 202,
+      "pressure": 1011,
+      "_id": "d9795222-6896-4915-8a3e-f1a975dd1f3a",
+      "stationid": "e7bf8a58-430c-436d-8213-282760bf1188"
     }
   ]
 }

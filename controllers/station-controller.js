@@ -54,18 +54,6 @@ export const stationController = {
         windDirection: readingData.wind_deg,
         pressure: readingData.pressure,
       };
-
-      const report = { // Create a report object
-        tempTrend: [],
-        trendLabels: [],
-      };
-  
-      const trends = result.data.daily;
-      for (let i = 0; i < trends.length; i++) {
-        report.tempTrend.push(trends[i].temp.day);
-        const date = new Date(trends[i].dt * 1000);
-        report.trendLabels.push(`${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`);
-      }
   
       await readingStore.addReading(station._id, newReading);
       Analytics.updateWeather(station);
