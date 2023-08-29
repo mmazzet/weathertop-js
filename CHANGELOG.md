@@ -19,3 +19,14 @@
 - Members, login, sign up, account creation
 - Members can create weather stations
 - Stations and readings also loaded from JSON
+## version 0.4.0
+- release 3
+- Time/Date
+- Temp, Wind, Pressure Trends
+- Members can update personal details
+- Stations show alphabetically
+- Members can delete reports and stations
+## version 0.5.0
+- release 4
+- Auto Read from OpenWeather
+- Map added in dashboard
