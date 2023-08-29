@@ -39,6 +39,4 @@ export const dashboardController = {
     await stationStore.deleteStationById(stationId);
     response.redirect("/dashboard");
   },
-
-
 };

@@ -1,13 +1,13 @@
 {{> menu active="dashboard"}}
 
 <section class="section">
-  <div class="notification is-primary has-text-white">
+  <div class="notification is-primary has-text-white is-size-4 has-text-weight-semibold pb-6 pt-6">
     Welcome {{loggedInMember.firstName}} {{loggedInMember.lastName}}!
-    <a id="profile" class="button is-danger is-pulled-right mb-2" href="/update-profile-view"> Update Profile </a>
+    <a id="profile" class="button is-danger is-pulled-right" href="/update-profile-view"> Update Profile </a>
   </div>
   
   {{> list-stations}}
   {{> add-station}}
-  {{!-- {{> map}} --}}
+  {{> map}}
 
 </section>

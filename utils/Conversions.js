@@ -1,47 +1,47 @@
 "use strict";
 
-import { readingStore } from "../models/reading-store.js";
+// import { readingStore } from "../models/reading-store.js";
 
 export const Conversion = {
   weatherCodes: {
-    200: " Thunderstorm",     
-    300: "Drizzle", 
-    500: "Rain",    
-    600: "Snow",     
-    700: "Fog",         
-    800: "Clear",         
-    801: "Few clouds",     
-    802: "Scattered-clouds",        
-    803: "Broken-clouds",         
-    804: "Overcast-clouds",       
+    200: "Thunderstorm",
+    300: "Drizzle",
+    500: "Rain",
+    600: "Snow",
+    700: "Fog",
+    800: "Clear",
+    801: "Few clouds",
+    802: "Scattered clouds",
+    803: "Broken clouds",
+    804: "Overcast clouds",
   },
 
   weatherCodeIcons: {
-    200: "fa-solid fa-cloud-bolt",     
-    300: "fa-solid fa-cloud-rain", 
-    500: "fa-solid fa-cloud-showers-heavy",    
-    600: "fa-solid fa-snowflake",     
-    700: "fa-solid fa-smog",         
-    800: "fa-solid fa-sun",          
-    801: "fa-solid fa-cloud-sun",     
-    802: "fa-solid fa-cloud",         
-    803: "fa-solid fa-cloud-moon",         
-    804: "fa-solid fa-cloud",       
-},
- 
-  weatherIcon: function(code) {
+    200: "fa-solid fa-cloud-bolt",
+    300: "fa-solid fa-cloud-rain",
+    500: "fa-solid fa-cloud-showers-heavy",
+    600: "fa-solid fa-snowflake",
+    700: "fa-solid fa-smog",
+    800: "fa-solid fa-sun",
+    801: "fa-solid fa-cloud-sun",
+    802: "fa-solid fa-cloud",
+    803: "fa-solid fa-cloud-moon",
+    804: "fa-solid fa-cloud",
+  },
+
+  weatherIcon: function (code) {
     return this.weatherCodeIcons[code];
   },
 
-  currentWeather: function(code) {
+  currentWeather: function (code) {
     return this.weatherCodes[code];
   },
 
-  tempF: function(tempC) {
+  tempF: function (tempC) {
     return (tempC * 1.8 + 32).toFixed(2);
   },
 
-  beaufort: function(windspeed) {
+  beaufort: function (windspeed) {
     if (windspeed === 0) {
       return 0;
     } else if (windspeed >= 1 && windspeed <= 6) {
@@ -71,8 +71,8 @@ export const Conversion = {
     }
     return -1;
   },
-  
-  degreesToCompass: function(deg) {
+
+  degreesToCompass: function (deg) {
     if (deg > 11.25 && deg <= 33.75) {
       return "North North East";
     } else if (deg > 33.75 && deg <= 56.25) {
@@ -108,4 +108,3 @@ export const Conversion = {
     }
   },
 };
-

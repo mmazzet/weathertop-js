@@ -100,6 +100,16 @@ export const Analytics = {
     return this.min(values);
   },
 
+  calcTrend: function (values) {
+    let trend = 0;
+    if (values[0] < values[1] && values[1] < values[2]) {
+      trend = 1;
+    } else if (values[0] > values[1] && values[1] > values[2]) {
+      trend = -1;
+    }
+    return trend;
+  },
+
   tempTrend: function (readings) {
     let trend = 0;
     if (readings.length > 2) {
@@ -137,16 +147,6 @@ export const Analytics = {
       trend = this.calcTrend(values);
     }
     return trend === 1;
-  },
-
-  calcTrend: function (values) {
-    let trend = 0;
-    if (values[0] < values[1] && values[1] < values[2]) {
-      trend = 1;
-    } else if (values[0] > values[1] && values[1] > values[2]) {
-      trend = -1;
-    }
-    return trend;
   }
 };
 

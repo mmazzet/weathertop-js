@@ -4,10 +4,10 @@ import { initStore } from "../utils/store-utils.js";
 const db = initStore("members");
 
 export const memberStore = {
-  async getAllMembers() {
-    await db.read();
-    return db.data.members;
-  },
+  // async getAllMembers() {
+  //   await db.read();
+  //   return db.data.members;
+  // },
 
   async addMember(member) {
     await db.read();
@@ -34,10 +34,10 @@ export const memberStore = {
     await db.write();
   },
 
-  async deleteAll() {
-    db.data.members = [];
-    await db.write();
-  },
+  // async deleteAll() {
+  //   db.data.members = [];
+  //   await db.write();
+  // },
 
   async updateMember(memberId, updatedMember) {
     const member = await this.getMemberById(memberId);

@@ -30,25 +30,11 @@
       "_id": "05"
     },
     {
-      "name": "Paris",
-      "lat": 48.864716,
-      "lng": 2.349014,
-      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
-      "_id": "762b3d89-623f-432d-bf29-d8b0b28b27ce"
-    },
-    {
       "name": "Spiddal",
       "lat": 53.25317,
       "lng": -9.28181,
       "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
       "_id": "a06978e0-3f2a-4e82-8846-6b7fc8f4ec86"
-    },
-    {
-      "name": "Barna",
-      "lat": 53.250796,
-      "lng": -9.147165,
-      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
-      "_id": "e1f31c16-7b65-43ee-aa26-ea35e38c6be8"
     },
     {
       "name": "Spiddal",
@@ -105,6 +91,13 @@
       "lng": -68.0093,
       "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
       "_id": "54f08085-5857-4f44-b374-499cd20f8017"
+    },
+    {
+      "name": "Galway",
+      "lat": 52.1609,
+      "lng": -7.1524,
+      "memberid": "0c797b48-62c9-469a-afd9-dcef6768afe8",
+      "_id": "a2e7eaa5-d12e-486c-9ba7-64cd3eddc766"
     }
   ]
 }

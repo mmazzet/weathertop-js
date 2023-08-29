@@ -37,7 +37,7 @@ export const accountsController = {
   async authenticate(request, response) {
     const member = await memberStore.getMemberByEmail(request.body.email);
     let message = "";
-  
+
     if (member && member.password === request.body.password) {
       response.cookie("station", member.email);
       console.log(`logging in ${member.email}`);
@@ -47,7 +47,7 @@ export const accountsController = {
         message = "Email not found. Please check your email or Sign up for a new account.";
       } else {
         message = "Incorrect email or password. Please check again or Sign up for a new account.";
-      } 
+      }
       console.log(`Authentication failed for ${request.body.email}`);
       response.render("login-view", { message });
     }
@@ -62,24 +62,22 @@ export const accountsController = {
 
   async profile(request, response) {
     const loggedInMember = await accountsController.getLoggedInMember(request);
-      const viewData = {
-        title: "Edit Member Profile",
-        member: loggedInMember,
-      };
-      response.render("update-profile-view", viewData);
-    },
+    const viewData = {
+      title: "Edit Member Profile",
+      member: loggedInMember,
+    };
+    response.render("update-profile-view", viewData);
+  },
 
-    async updateProfile(request, response) {
-      const loggedInMember = await accountsController.getLoggedInMember(request);
-      const memberId = await memberStore.getMemberById(loggedInMember._id);
-      const updatedMember = {
-        firstName: request.body.firstName,
-        lastName: request.body.lastName,
-        password: request.body.password,
-      }
-      await memberStore.updateMember(memberId._id, updatedMember);
-      response.redirect("/dashboard");
-    },
-
-    
+  async updateProfile(request, response) {
+    const loggedInMember = await accountsController.getLoggedInMember(request);
+    const memberId = await memberStore.getMemberById(loggedInMember._id);
+    const updatedMember = {
+      firstName: request.body.firstName,
+      lastName: request.body.lastName,
+      password: request.body.password,
+    };
+    await memberStore.updateMember(memberId._id, updatedMember);
+    response.redirect("/dashboard");
+  },
 };
