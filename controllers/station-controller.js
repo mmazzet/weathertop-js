@@ -13,7 +13,7 @@ export const stationController = {
     const viewData = {
       title: station.name,
       name: station.name,
-      station: station,
+      station: station
     };
     response.render("station-view", viewData);
   },
@@ -45,7 +45,6 @@ export const stationController = {
     const result = await axios.get(requestUrl);
 
     if (result.status === 200) {
-      // console.log(result.data);
       const reading = result.data.current;
       report.code = reading.weather[0].id;
       report.date = new Date(reading.dt * 1000).toISOString().replace("T", " ").replace("Z", "");
@@ -55,28 +54,29 @@ export const stationController = {
       report.pressure = reading.pressure;
 
       report.tempTrendG = [];
-      console.log(report.tempTrendG);
       report.trendLabels = [];
-      console.log(report.trendLabels);
       const trends = result.data.daily;
-
-      console.log(trends);
       for (let i = 0; i < trends.length; i++) {
         report.tempTrendG.push(trends[i].temp.day);
         const date = new Date(trends[i].dt * 1000);
         report.trendLabels.push(`${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`);
       }
     }
-    // console.log(report);
     const viewData = {
       title: "New Report",
       reading: report
     };
+
+    const fetchedStation = await stationStore.getStationById(station._id);
+
+    const combinedViewData = {
+      ...viewData,
+      station: fetchedStation,
+    };
     
     await readingStore.addReading(station._id, report);
-      Analytics.updateWeather(station);
-      response.redirect(`/station/${station._id}`);
-
+    Analytics.updateWeather(fetchedStation);
+    response.render("station-view", combinedViewData);
   },
 
   async deleteReading(request, response) {

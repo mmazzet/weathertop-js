@@ -11,6 +11,7 @@ export const dashboardController = {
       const nameB = stationB.name.toUpperCase();
       return nameA.localeCompare(nameB);
     });
+
     const viewData = {
       title: "WeatherTop Dashboard",
       stations: stations,

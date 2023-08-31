@@ -98,6 +98,13 @@
       "lng": -7.1524,
       "memberid": "0c797b48-62c9-469a-afd9-dcef6768afe8",
       "_id": "a2e7eaa5-d12e-486c-9ba7-64cd3eddc766"
+    },
+    {
+      "name": "Dublin",
+      "lat": 53.35014,
+      "lng": -6.266155,
+      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
+      "_id": "ccb287d1-d444-49d5-9362-6ee447aa9a11"
     }
   ]
 }
