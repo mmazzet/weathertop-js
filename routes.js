@@ -16,15 +16,14 @@ router.post("/authenticate", accountsController.authenticate);
 router.get("/update-profile-view", accountsController.profile);
 router.post("/profile/update-profile-view/:_id", accountsController.updateProfile);
 
-
 router.get("/dashboard", dashboardController.index);
 router.post("/dashboard/addstation", dashboardController.addStation);
 router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
+
 router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreading", stationController.addReading);
 router.get("/station/:stationid/deletereading/:readingid", stationController.deleteReading);
-router.get("/about", aboutController.index);
-
 router.post("/station/:id/addreport", stationController.addReport);
+router.post("/station/:id/addchart", stationController.addChart);
 
-
+router.get("/about", aboutController.index);

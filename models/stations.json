@@ -30,39 +30,11 @@
       "_id": "05"
     },
     {
-      "name": "Spiddal",
-      "lat": 53.25317,
-      "lng": -9.28181,
-      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
-      "_id": "a06978e0-3f2a-4e82-8846-6b7fc8f4ec86"
-    },
-    {
-      "name": "Spiddal",
-      "lat": 53.25317,
-      "lng": -9.28181,
-      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
-      "_id": "9494e482-b43f-46fd-89b4-635803c87075"
-    },
-    {
       "name": "Galway",
       "lat": 53.270962,
       "lng": -9.062691,
       "memberid": "7df5c92f-2307-4672-82d0-14a3a4192230",
       "_id": "1bdb1ba0-d4a0-4b66-b42a-08f0d2733856"
-    },
-    {
-      "name": "Spiddal",
-      "lat": 53.25317,
-      "lng": -9.28181,
-      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
-      "_id": "e7bf8a58-430c-436d-8213-282760bf1188"
-    },
-    {
-      "name": "Cagliari",
-      "lat": 39.223841,
-      "lng": 9.121661,
-      "memberid": "599dd9b4-f1bf-4598-bf9d-e11e86d18cc4",
-      "_id": "8dd98760-1ec9-4ecf-b2fb-2937b74585c9"
     },
     {
       "name": "Galway",
@@ -79,13 +51,6 @@
       "_id": "8c4b0e3f-8333-4646-9431-c1a4953bf4e3"
     },
     {
-      "name": "Paris",
-      "lat": 48.864716,
-      "lng": 2.349014,
-      "memberid": "e5b9eea7-3162-4c51-baa3-52ecc87045db",
-      "_id": "02d241dc-d042-4fa7-8367-a1728073c5b8"
-    },
-    {
       "name": "Cerro Castor",
       "lat": -54.719,
       "lng": -68.0093,
@@ -98,13 +63,6 @@
       "lng": -7.1524,
       "memberid": "0c797b48-62c9-469a-afd9-dcef6768afe8",
       "_id": "a2e7eaa5-d12e-486c-9ba7-64cd3eddc766"
-    },
-    {
-      "name": "Dublin",
-      "lat": 53.35014,
-      "lng": -6.266155,
-      "memberid": "229fc5e9-9b21-4705-81dc-95b9e8b27a53",
-      "_id": "ccb287d1-d444-49d5-9362-6ee447aa9a11"
     }
   ]
 }
