@@ -30,3 +30,4 @@
 - release 4
 - Auto Read from OpenWeather
 - Map added in dashboard
+- Chart added in stations

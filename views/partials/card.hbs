@@ -45,10 +45,12 @@
         </div>
         <div class="column">
           <div class="content icon is-pulled-right has-text-info mt-2">
-            {{#if station.tempTrend}}
+            {{#if (eq station.tempTrend 1)}}
             <i class="fa-solid fa-up-long"></i>
-            {{else}}
+            {{else if (eq station.tempTrend -1)}}
             <i class="fa-solid fa-down-long"></i>
+            {{else if (eq station.tempTrend 0)}}
+            <i class="fa-solid fa-minus"></i>
             {{/if}}
           </div>
         </div>
@@ -73,10 +75,12 @@
         </div>
         <div class="column">
           <div class="content icon is-pulled-right has-text-success mt-2">
-            {{#if station.windTrend}}
+            {{#if (eq station.windTrend 1)}}
             <i class="fa-solid fa-up-long"></i>
-            {{else}}
+            {{else if (eq station.windTrend -1)}}
             <i class="fa-solid fa-down-long"></i>
+            {{else if (eq station.windTrend 0)}}
+            <i class="fa-solid fa-minus"></i>
             {{/if}}
           </div>
         </div>
@@ -100,10 +104,12 @@
         </div>
         <div class="column">
           <div class="content icon is-pulled-right has-text-link mt-2">
-            {{#if station.pressureTrend }}
+            {{#if (eq station.pressureTrend 1)}}
             <i class="fa-solid fa-up-long"></i>
-            {{else}}
+            {{else if (eq station.pressureTrend -1)}}
             <i class="fa-solid fa-down-long"></i>
+            {{else if (eq station.pressureTrend 0)}}
+            <i class="fa-solid fa-minus"></i>
             {{/if}}
           </div>
         </div>

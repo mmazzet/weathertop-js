@@ -4,10 +4,10 @@ import { initStore } from "../utils/store-utils.js";
 const db = initStore("readings");
 
 export const readingStore = {
-  // async getAllReadings() {
-  //   await db.read();
-  //   return db.data.readings;
-  // },
+  async getAllReadings() {
+    await db.read();
+    return db.data.readings;
+  },
 
   async addReading(stationId, reading) {
     await db.read();
