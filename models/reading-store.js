@@ -35,11 +35,6 @@ export const readingStore = {
     await db.write();
   },
 
-  // async deleteAllReadings() {
-  //   db.data.readings = [];
-  //   await db.write();
-  // },
-
   async updateReading(reading, updatedReading) {
     reading.code = updatedReading.code;
     reading.temperature = updatedReading.temperature;

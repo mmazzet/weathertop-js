@@ -12,7 +12,6 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 app.use(fileUpload());
-// app.engine(".hbs", engine({ extname: ".hbs" }));
 app.engine(".hbs", engine({ extname: ".hbs", helpers: handlebarsHelpers }));
 app.set("view engine", ".hbs");
 app.set("views", "./views");

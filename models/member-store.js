@@ -4,11 +4,6 @@ import { initStore } from "../utils/store-utils.js";
 const db = initStore("members");
 
 export const memberStore = {
-  // async getAllMembers() {
-  //   await db.read();
-  //   return db.data.members;
-  // },
-
   async addMember(member) {
     await db.read();
     member._id = v4();
@@ -33,11 +28,6 @@ export const memberStore = {
     db.data.members.splice(index, 1);
     await db.write();
   },
-
-  // async deleteAll() {
-  //   db.data.members = [];
-  //   await db.write();
-  // },
 
   async updateMember(memberId, updatedMember) {
     const member = await this.getMemberById(memberId);
