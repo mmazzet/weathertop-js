@@ -151,5 +151,3 @@ export const Analytics = {
     return trend;
   },
 };
-
-export default Analytics;
