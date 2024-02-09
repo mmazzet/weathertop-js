@@ -32,10 +32,10 @@ The application facilitates submission of data and provides weather analytics fo
 ### :pencil: WeatherTop Screenshots
 
 Start page:
-
+![image](https://github.com/mmazzet/weathertop-js/assets/120139950/ad78beed-5b4e-4fd1-b366-2f87df52a57c)
 
 Sign up page:
-![image](https://github.com/mmazzet/weathertop-js/assets/120139950/ad78beed-5b4e-4fd1-b366-2f87df52a57c)
+![image](https://github.com/mmazzet/weathertop-js/assets/120139950/4c7be8ed-2b28-4cb0-9bdd-3e0e43af61ef)
 
 Log in page:
 ![image](https://github.com/mmazzet/weathertop-js/assets/120139950/02ebd539-9b07-4328-9a49-f325559dc2a8)
