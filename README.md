@@ -9,6 +9,7 @@ The application facilitates submission of data and provides weather analytics fo
 - Users have the ability to sign up, log in, and manage stations. This includes adding or removing weather stations and associated readings.
 - Users can use button Auto Generate Reading to fetch weather conditions of the station based on latitude and longitude. Use of OpenWeatherMap API.
 - Users can update their log in details.
+- Users can display a map of all the locations in the dashboard
 - Users can add a Frappe chart of the week's temperature trend for the location.
 - App deployed in Glitch https://weathertop-release-4-mmazzet-webdev-2.glitch.me/
 
@@ -22,6 +23,7 @@ The application facilitates submission of data and provides weather analytics fo
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="nodejs" alt="nodejs" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svgg" title="express" alt="express" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/handlebars/handlebars-original-wordmark.svg" title="handlebars" alt="handlebars" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg" title="GitHub" alt="GitHub" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
@@ -41,7 +43,7 @@ Log in page:
 ![image](https://github.com/mmazzet/weathertop-js/assets/120139950/02ebd539-9b07-4328-9a49-f325559dc2a8)
 
 Member Dashboard:
-![image](https://github.com/mmazzet/weathertop-js/assets/120139950/9f42ff01-9df4-4f60-99a0-956857b161d1)
+![image](https://github.com/mmazzet/weathertop-js/assets/120139950/f5f601ad-cd40-47fc-b179-f36765f05bea)
 
 Member Profile update
 ![image](https://github.com/mmazzet/weathertop-js/assets/120139950/3562d0d0-d2f4-413b-9375-019c22cbd280)
