@@ -2,9 +2,12 @@ import express from "express";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
+import "dotenv/config";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
 import { handlebarsHelpers } from "./hb-helpers.js";
+
+
 
 
 const app = express();
@@ -17,6 +20,6 @@ app.set("view engine", ".hbs");
 app.set("views", "./views");
 app.use("/", router);
 
-const listener = app.listen(process.env.PORT || 4000, function () {
+const listener = app.listen(process.env.PORT || 3000, function () {
   console.log(`WeatherTop started on http://localhost:${listener.address().port}`);
 });
