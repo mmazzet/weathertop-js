@@ -11,7 +11,6 @@ The application facilitates submission of data and provides weather analytics fo
 - Users can update their log in details.
 - Users can display a map of all the locations in the dashboard
 - Users can add a Frappe chart of the week's temperature trend for the location.
-- App deployed in Glitch https://weathertop-release-4-mmazzet-webdev-2.glitch.me/
 
 ---
 
