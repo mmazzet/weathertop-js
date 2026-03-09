@@ -42,7 +42,7 @@ export const stationController = {
     const lng = Number(request.body.lng);
     console.log(`adding report ${lat} ${lng}`);
     const api_key = process.env.API_KEY;
-    const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lng}&units=metric&appid=${api_key}`;
+    const requestUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lng}&units=metric&appid=${api_key}`;
     const result = await axios.get(requestUrl);
 
     if (result.status === 200) {
@@ -66,7 +66,7 @@ export const stationController = {
       const lat = Number(request.body.lat);
       const lng = Number(request.body.lng);
       const api_key = process.env.API_KEY;
-      const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lng}&units=metric&appid=${api_key}`;
+      const requestUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lng}&units=metric&appid=${api_key}`;
       const result = await axios.get(requestUrl);
   
       if (result.status === 200) {  
