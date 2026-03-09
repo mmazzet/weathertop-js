@@ -850,16 +850,6 @@
       "pressure": 1005,
       "_id": "8f98b636-ba35-4016-9123-f7a06950ffc1",
       "stationid": "27e015c8-dc0d-435a-ba6d-f86d29e0e05c"
-    },
-    {
-      "code": 802,
-      "date": "2023-09-02 11:11:53.474",
-      "temperature": 17.44,
-      "windSpeed": 1.79,
-      "windDirection": 146,
-      "pressure": 1021,
-      "_id": "a1a66815-df84-4337-880e-88b2d7deb23f",
-      "stationid": "01"
     }
   ]
 }
